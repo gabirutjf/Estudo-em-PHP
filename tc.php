@@ -19,10 +19,9 @@
 
             <nav>
                 <ul>
-                    <li>Contato</li>
-                    <li>Login</li>
-                    <li>Cadastre-se</li>
-                    <li></li>
+                    <li><a class="link" href="">Contato</a></li>
+                    <li><a class="link" href="">Login</a></li>
+                    <li><a class="link" href="">Cadastre-se</a></li>
                 </ul>
             </nav>
     </header>

@@ -45,4 +45,8 @@ a{
 /*            NAVBAR           */   
 nav > ul {flex-wrap: wrap; display: flex; justify-content: center; align-items: center;}
 li{margin-left: 20px; list-style: none; color: white;}
+.link{text-decoration: none; color: #ffffff;}
+.link:hover{color: #b73d47;}
+
+
 
