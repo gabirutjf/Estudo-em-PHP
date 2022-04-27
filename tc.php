@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <header>
+    <header class="header-top">
             <div class="logo">
                 <a href="https://www.telecall.com/" target="_blank" rel="next">
                     <div class="box">T</div> <div class="box">E</div>
@@ -19,11 +19,12 @@
 
             <nav>
                 <ul>
-                    <li><a class="link" href="">Contato</a></li>
-                    <li><a class="link" href="">Login</a></li>
+                    <li><a class="link" href="https://web.whatsapp.com/" target="_blank" >Contato</a></li>
+                    <li><a class="link" href="./login/login.php" target="_blank" rel="next">Login</a></li>
                     <li><a class="link" href="">Cadastre-se</a></li>
                 </ul>
             </nav>
     </header>
+    
 </body>
 </html>
