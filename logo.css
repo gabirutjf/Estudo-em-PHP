@@ -9,7 +9,7 @@
     margin: 0; padding: 0; box-sizing: border-box;
     font-family:var(--font-logo) ;
 }
-/*        LOGO INTERATIVA          */
+/*         
 header{
     display: flex; justify-content:space-around; align-items: center;
     background-color: #121212; box-shadow: 1px 1px 5px black;
@@ -19,7 +19,7 @@ a{
     display: flex;
     text-decoration: none;
 }
-
+/*        LOGO INTERATIVA          */
 .logo{
     display: flex; margin-left: 30px;
 }

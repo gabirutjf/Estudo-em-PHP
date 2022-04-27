@@ -21,7 +21,7 @@
                 <ul>
                     <li><a class="link" href="https://web.whatsapp.com/" target="_blank" >Contato</a></li>
                     <li><a class="link" href="./login/login.php" target="_blank" rel="next">Login</a></li>
-                    <li><a class="link" href="">Cadastre-se</a></li>
+                    <li><a class="link" href="./cadastro/cadastro.php">Cadastre-se</a></li>
                 </ul>
             </nav>
     </header>
