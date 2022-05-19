@@ -82,9 +82,5 @@ li{margin-left: 20px; list-style: none; color: white;}
         </nav>
 </header>
 
-<main>
-    Bem vindo ao painel, <?php echo $_SESSION['nome'];?>
-</main>
-
 </body>
 </html>
