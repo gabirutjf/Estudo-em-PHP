@@ -59,7 +59,7 @@ li{margin-left: 20px; list-style: none; color: white;}
 .link{text-decoration: none; color: #ffffff;}
 .link:hover{color: #b73d47;}
 
-main{background-color: white; max-width: 600px; height: 800px; margin: auto;
+main{background-color: white; max-width: 600px; height: 850px; margin: auto;
             border-radius: 10px; margin-top: 20px;}
 .cadastro{display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;
           padding-top: 30px;}
@@ -70,7 +70,7 @@ label{display: flex; justify-content: center; align-items: center; flex-directio
 <body>
     <header>
         <div class="logo">
-            <a href="../telecall index/index.html" target="_self" rel="prev">
+            <a href="index.php" target="_self" rel="prev">
                 <div class="box">T</div> <div class="box">E</div>
                 <div class="box">L</div> <div class="box">E</div>
             </a>
@@ -79,21 +79,27 @@ label{display: flex; justify-content: center; align-items: center; flex-directio
         <nav class="nav-bar">
             <ul>
                 <li><a class="link" href="https://web.whatsapp.com/" target="_blank" >Contato</a></li>
-                <li><a class="link" href="../login/login.html" target="_blank" rel="next">Login</a></li>
-                <li><a class="link" href="../cadastro/cadastro.php">Cadastre-se</a></li>
+                <li><a class="link" href="listar.php" target="_self" rel="prev">Login</a></li>
+                <li><a class="link" href="novo-usuario.php" target="_self">Cadastre-se</a></li>
             </ul>
         </nav>
 </header>
 
     <main>
-        <form class="cadastro" action="" method="post">
+        <form class="cadastro" action="?page=salvar" method="POST">
+            <input type="hidden" name="acao" value="cadastrar">
+            
             <h1>Cadastre-se</h1>
             <label for="nome">
                 Nome <input type="text" name="nome" placeholder="Digite seu nome">
             </label>
 
-            <label for="nascimento">
-                Data de Nascimento <input type="datetime" name="nascimento" placeholder="Data de nascimento">
+            <label for="email">
+                E-mail <input type="text" name="email" placeholder="Digite o E-mail">
+            </label>
+
+            <label for="senha">
+                Senha <input type="password" name="senha" placeholder="Digite a senha">
             </label>
 
             <label for="materno">
@@ -111,6 +117,11 @@ label{display: flex; justify-content: center; align-items: center; flex-directio
             <label for="fixo">
                 Telefone fixo <input type="number" name="fixo" placeholder="Telefone fixo">
             </label>
+
+            <label for="nascimento">
+                Data de Nascimento <input type="date" name="nascimento" placeholder="Data de nascimento">
+            </label>
+            <br>
             <h2>Endereço</h2>
             
             <label for="cep">
@@ -125,10 +136,6 @@ label{display: flex; justify-content: center; align-items: center; flex-directio
                 Cidade <input type="text" name="cidade" placeholder="Digite sua cidade">
             </label>
 
-            <label for="bairro">
-                Bairro <input type="text" name="bairro" placeholder="Digite seu bairro">
-            </label>
-
             <label for="rua">
                 Rua <input type="text" name="rua" placeholder="Digite sua rua">
             </label>
@@ -137,9 +144,9 @@ label{display: flex; justify-content: center; align-items: center; flex-directio
                 Número <input type="number" name="numero" placeholder="Número da residência">
             </label>
             <br>
-            <input type="button" name="btn_cadastro" value="Cadastrar">
+            <input type="submit" name="btn_cadastro" value="Cadastrar">
         </form>
     </main>
-    <a href="../login/login.php">voltar</a>
+    <a href="login.html">voltar</a>
 </body>
 </html>

@@ -18,7 +18,7 @@
     font-family:var(--font-logo) ;
 }
 
-body{background-image: url(../img/img-fundo.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+body{background-image: url(./img/img-fundo.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
        
 header{
     display: flex; justify-content:space-around; align-items: center;
@@ -58,16 +58,14 @@ a{
 li{margin-left: 20px; list-style: none; color: white;}
 .link{text-decoration: none; color: #ffffff;}
 .link:hover{color: #b73d47;}
-
-
-/*           Main         */
-
-    </style>
+</style>
 </head>
+
+
 <body>
     <header>
         <div class="logo">
-            <a href="../telecall index/index.html" target="_self" rel="next">
+            <a href="index.php" target="_self" rel="next">
                 <div class="box">T</div> <div class="box">E</div>
                 <div class="box">L</div> <div class="box">E</div>
             </a>
@@ -76,11 +74,33 @@ li{margin-left: 20px; list-style: none; color: white;}
         <nav class="nav-bar">
             <ul>
                 <li><a class="link" href="https://web.whatsapp.com/" target="_blank" >Contato</a></li>
-                <li><a class="link" href="../login/login.html" target="_self" rel="next">Login</a></li>
-                <li><a class="link" href="../cadastro/cadastro.html" target="_self">Cadastre-se</a></li>
+                <li><a class="link" href="listar.php" target="_self" rel="next">Login</a></li>
+                <li><a class="link" href="novo-usuario.php">Cadastre-se</a></li>
             </ul>
         </nav>
 </header>
+
+
+<div class="container">
+    <div class="row">
+            <?php
+                include("config.php");
+                switch(@$_REQUEST["page"]){
+                    case "novo":
+                        include("novo-usuario.php");
+                    break;
+                    case "listar":
+                        include("listar-usuario.php");
+                    break;
+                    case "salvar":
+                        include("salvar-usuario.php");
+                    break;
+                    default;
+                        echo "<h1>Bem Vindos!</h1>";
+                }
+            ?>
+    </div>
+</div>
 
 </body>
 </html>

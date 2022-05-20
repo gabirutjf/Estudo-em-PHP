@@ -18,7 +18,7 @@
     font-family:var(--font-logo) ;
 }
 
-body{background-image: url(../img/img-fundo.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+body{background-image: url(./img/img-fundo.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
        
 header{
     display: flex; justify-content:space-around; align-items: center;
@@ -91,7 +91,7 @@ li{margin-left: 20px; list-style: none; color: white;}
 <body>
     <header>
             <div class="logo">
-                <a href="../telecall index/index.html" target="_self" rel="next">
+                <a href="index.php" target="_self" rel="next">
                     <div class="box">T</div> <div class="box">E</div>
                     <div class="box">L</div> <div class="box">E</div>
                 </a>
@@ -100,8 +100,8 @@ li{margin-left: 20px; list-style: none; color: white;}
             <nav class="nav-bar">
                 <ul>
                     <li><a class="link" href="https://web.whatsapp.com/" target="_self" >Contato</a></li>
-                    <li><a class="link" href="./login/login.php" target="_self" rel="next">Sobre</a></li>
-                    <li><a class="link" href="../cadastro/cadastro.html" target="_self">Cadastre-se</a></li>
+                    <li><a class="link" href="listar.php" target="_self" rel="next">Sobre</a></li>
+                    <li><a class="link" href="novo-usuario.php" target="_self" rel="next">Cadastre-se</a></li>
                 </ul>
             </nav>
     </header>
@@ -109,7 +109,7 @@ li{margin-left: 20px; list-style: none; color: white;}
     <main>
         <div class="left-login">
             <h1>Faça Login!</h1>
-            <img class="logo-tc-img" src="../img/telecall-logo.jpg" alt="">
+            <img class="logo-tc-img" src="./img/telecall-logo.jpg" alt="">
         </div>
 
         <div class="right-login">
@@ -125,7 +125,7 @@ li{margin-left: 20px; list-style: none; color: white;}
                 </label>
 
                 <input class="btn_entrar" type="button" value="Entrar" name="btn_entrar">
-                <p><a href="cadastro/cadastro.php">Cadastre-se</a></p>
+                <p><a href="novo-usuario.php">Cadastre-se</a></p>
             </form>
         </div>
     </main>
