@@ -1,6 +1,7 @@
 <?php
+    require_once("config.php");
     switch ($_REQUEST["acao"]){
-        case 'Cadastrar':
+        case 'cadastrar':
             $nome = $_POST["nome"];
             $email = $_POST["email"];
             $senha = $_POST["senha"];
@@ -30,5 +31,7 @@
 
         case 'excluir':
         break;  
+
+        echo "<center><h1>Cadastrado!</h1></center>";
     }
 ?>

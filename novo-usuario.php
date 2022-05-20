@@ -86,7 +86,7 @@ label{display: flex; justify-content: center; align-items: center; flex-directio
 </header>
 
     <main>
-        <form class="cadastro" action="?page=salvar" method="POST">
+        <form class="cadastro" action="salvar-usuario.php" method="POST">
             <input type="hidden" name="acao" value="cadastrar">
             
             <h1>Cadastre-se</h1>
