@@ -4,7 +4,7 @@
         case 'cadastrar':
             $nome = $_POST["nome"];
             $email = $_POST["email"];
-            $senha = $_POST["senha"];
+            $senha = md5($_POST["senha"]);
             $materno = $_POST["materno"];
             $cpf = $_POST["cpf"];
             $celular = $_POST["celular"];
@@ -24,6 +24,14 @@
              '{$cidade}','{$rua}','{$numero}')";
 
              $res = $conn->query($sql);
+
+             if($res==true){
+                echo "<script>alert('Cadastro com sucesso');</script>";
+                echo "<script>location.href='listar.php';</script>";
+            }else{
+                echo "<script>alert('Erro');</script>";
+                echo "<script>location.href='listar.php';</script>";
+            }
         break;
 
         case 'editar':
@@ -31,7 +39,6 @@
 
         case 'excluir':
         break;  
-
-        echo "<center><h1>Cadastrado!</h1></center>";
+        
     }
 ?>
