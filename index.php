@@ -5,60 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeleCall</title>
-    <style>
-        @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
-
-:root{
-    --font-logo: 'Poppins', sans-serif;
-}
-
-*{
-    margin: 0; padding: 0; box-sizing: border-box;
-    font-family:var(--font-logo) ;
-}
-
-body{background-image: url(./img/img-fundo.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
-       
-header{
-    display: flex; justify-content:space-around; align-items: center;
-    background-color: #121212; box-shadow: 1px 1px 5px black;
-}
-
-a{
-    display: flex;
-    text-decoration: none;
-}
-
-/*        LOGO INTERATIVA          */
-.logo{
-    display: flex; margin-left: 30px;
-}
-
-.box{
-    width: 50px; height: 50px; display: flex; justify-content: center;
-    align-items: center; font-size: 1.4em; font-weight: 700; color: #ffffff;
-    transition: all .8s; cursor: pointer; position: relative;
-    background-color: #ca1c2a; overflow: hidden;
-}
-
-.box::before{
-    content: 'C'; position: absolute; top: 0; background-color: #0f0f0f;
-    width: 100%; height: 100%; display: flex; justify-content: center;
-    align-items: center; transform: translateY(100%);
-    transition: transform .4s;
-}
-.box:nth-child(2)::before{transform: translateY(-100%); content: 'A';}
-.box:nth-child(3)::before{content: 'L';}
-.box:nth-child(4)::before{transform: translateY(-100%); content: 'L';}
-.logo:hover .box::before{transform: translateY(0);}
-
-/*            NAVBAR           */   
-.nav-bar > ul {flex-wrap: wrap; display: flex; justify-content: center; align-items: center;}
-li{margin-left: 20px; list-style: none; color: white;}
-.link{text-decoration: none; color: #ffffff;}
-.link:hover{color: #b73d47;}
-</style>
+    <link rel="stylesheet" href="header.css">
 </head>
 
 
@@ -74,7 +21,7 @@ li{margin-left: 20px; list-style: none; color: white;}
         <nav class="nav-bar">
             <ul>
                 <li><a class="link" href="https://web.whatsapp.com/" target="_blank" >Contato</a></li>
-                <li><a class="link" href="listar.php" target="_self" rel="next">Login</a></li>
+                <li><a class="link" href="login.php" target="_self" rel="next">Login</a></li>
                 <li><a class="link" href="novo-usuario.php">Cadastre-se</a></li>
             </ul>
         </nav>
