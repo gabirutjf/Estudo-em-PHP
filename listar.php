@@ -40,7 +40,12 @@
                         echo "<td>".$row->email."</td>";
                         echo "<td>".$row->nascimento."</td>";
                         echo "<td>".$row->celular."</td>";
-                        
+                        echo "<td>
+                            <button onclick=\"location.href='editar.php&id=".$row->id."';\"
+                            <button class='btn btn-sucess'>Editar</button>
+                            
+                            <button class='btn btn-danger'>Excluir</button>
+                        </td>";
                     echo "</tr>";
                 }
                 echo "</table>";

@@ -48,6 +48,7 @@
             ?>
     </div>
 </div>
+<a href="./listar.php">lista</a>
 
 </body>
 </html>
