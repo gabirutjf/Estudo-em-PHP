@@ -27,10 +27,13 @@
 </header>
     <main>
         <form class="cadastro" action="salvar-usuario.php" method="POST">
-            <input type="hidden" name="id" value="<?php echo $row->id; ?>">
+            <input type="hidden" name="id" value="<?= $_GET['id']; ?>">
+            <input type="hidden" name="acao" value="editar">
+
             
             <h1>Editar usuário</h1>
             <?php
+            require_once("config.php");
                 $sql = "SELECT * FROM cadastrados WHERE id=".$_REQUEST["id"];
                 $res = $conn->query($sql);
                 $row = $res->fetch_object();

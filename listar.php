@@ -56,7 +56,7 @@
                             echo "<td>".$row->nascimento."</td>";
                             echo "<td>".$row->celular."</td>";
                             echo "<td>
-                                <button onclick=\"location.href='?page=editar-usuario.php&id=".$row->id."';\"
+                            <button onclick=\"location.href='editar-usuario.php?id=".$row->id."';\"
                                 <button class='btn btn-sucess'>Editar</button>
         
                                 <button class='btn btn-danger'>Excluir</button>
