@@ -76,7 +76,7 @@ li{margin-left: 20px; list-style: none; color: white;}
 
 
     /*       Tela da direita - Login      */
-    .right-login{height: 300px; background-color: #121212; border-radius: 10px;
+    .right-login{height: 400px; background-color: #121212; border-radius: 10px;
                 display: flex; align-items: center; justify-content: center;
                 padding: 10px 30px 10px 30px;
                 }
@@ -84,6 +84,53 @@ li{margin-left: 20px; list-style: none; color: white;}
             margin: 20px;}
     label{margin-bottom: 16px; display: flex; flex-direction: column; text-align: center;}
     ::placeholder{text-align: center;}
+
+/*      Botão decorado    */
+    .btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.btn{
+    
+  border-radius: 20px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
 </style>
 </head>
 
@@ -124,7 +171,7 @@ li{margin-left: 20px; list-style: none; color: white;}
                     Senha <input type="password" name="senha" placeholder="Digite sua senha">
                 </label>
 
-                <input class="btn_entrar" type="button" value="Entrar" name="btn_entrar">
+                <input class="btn" type="button" value="Entrar" name="btn_entrar">
                 <p><a href="novo-usuario.php">Cadastre-se</a></p>
             </form>
         </div>
