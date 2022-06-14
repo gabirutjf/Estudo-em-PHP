@@ -62,7 +62,17 @@
         break;
 
         case 'excluir':
+            $sql = "DELETE FROM cadastrados WHERE id=".$_REQUEST['id'];
+
+            $res = $conn->query($sql);
+
+            if($res==true){
+                echo "<script>alert('Excluido com sucesso');</script>";
+                echo "<script>location.href='listar.php';</script>";
+            }else{
+                echo "<script>alert('Erro');</script>";
+                echo "<script>location.href='listar.php';</script>";
+            }
         break;  
-        
-    }
+    };
 ?>
