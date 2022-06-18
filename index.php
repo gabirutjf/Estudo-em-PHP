@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeleCall</title>
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="parallax.css">
 </head>
 
 
@@ -46,12 +47,32 @@
                         include("editar-usuario.php");
                     break;
                     default;
-                        echo "<h1>Bem Vindos!</h1>";
                 }
             ?>
     </div>
 </div>
-<a href="./listar.php">lista</a>
+<img class="imglogo" src="./img/telecall-logo.jpg" alt="">
+    
+    <section class="normal">
+        <p>Com início em 1998 oferecendo serviços de voz no Japão, a divisão internacional Telecall Wholesale foi criada com o objetivo de apoiar o setor de varejo da empresa. Desde seu lançamento, a Telecall Wholesale sempre teve muita pressão interna para oferecer serviços de alta qualidade com tarifas competitivas em um mercado extremamente competitivo. Com essa filosofia, a Telecall focou no mercado internacional e alcançou uma cobertura global com parceiros estratégicos, obtendo hoje, mais de 600 interconexões com algumas das maiores operadoras do mundo.</p>
+    </section>
+
+    <section class="imagem" id="img01">
+        <p>Com uma enorme capacidade de lidar com diferentes mercados e culturas, a Telecall Wholesale pôde apoiar e adaptar-se quando a empresa lançou em 2005, um produto de varejo nos EUA, um dos mercados mais competitivos do mundo.</p>
+    </section>
+
+    <section class="normal">
+        <p>Outro desafio veio em 2010, quando a Telecall decidiu construir sua própria rede de fibra óptica na cidade do Rio de Janeiro, no Brasil, e começou a oferecer serviços empresariais de voz e dados.</p>
+    </section>
+    
+    <section class="imagem" id="img02">
+        <p>Em um curto espaço de tempo a Telecall vem ganhando respeito nacional e internacional, e fez história ao participar com muito sucesso nos Jogos Olímpicos de 2014 no Brasil e do Rock in Rio em 2017.</p>
+    </section>
+
+    <section class="normal">
+        <p>Após quase 20 anos de sucesso e crescimento exponencial, a Telecall Wholesale é conhecida hoje como uma Global Carrier, com sólidas relações comerciais, capaz de se adaptar e lidar com os constantes desafios e mudanças do mundo dos negócios.</p>
+    </section>
 
 </body>
+<a href="./listar.php">lista</a>
 </html>

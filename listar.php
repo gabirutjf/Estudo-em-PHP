@@ -56,10 +56,11 @@
                             echo "<td>".$row->nascimento."</td>";
                             echo "<td>".$row->celular."</td>";
                             echo "<td>
-                            <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href=editar.php&acao=excluir&id=".$row->id."}else{false}\"
+                                <button onclick=\"location.href='editar-usuario.php';\"
                                 <button class='btn btn-sucess'>Editar</button>
-        
-                                <button class='btn btn-danger'>Excluir</button>
+                                
+                                <button onclick=\"if(confirm(Tem certeza que deseja excluir?')){location.href=salvar-usuario.php&acao=excluir&id=".$row->id.";}else{false;}\"
+                                <button class='btn btn-danger''>Excluir</button>
                                 </td>";
                         echo "</tr>";
                     }
