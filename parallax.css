@@ -1,12 +1,16 @@
 @charset "utf-8";
+body{background-color: rgb(255, 255, 255);}
+.container{max-width: 800px; margin: auto;}
 
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 1,5em;
     font-family: var(--font-secundária);
     font-size: 2vw;
-    padding-left: 30px;
+    border-radius: 16px;
 }
 
 section.normal{
@@ -21,6 +25,7 @@ section.imagem{
 }
 
 section p {
+    border-radius: 16px;
     padding-bottom: 10px;
 }
 

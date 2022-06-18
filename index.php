@@ -50,7 +50,6 @@
                 }
             ?>
     </div>
-</div>
 <img class="imglogo" src="./img/telecall-logo.jpg" alt="">
     
     <section class="normal">
@@ -72,6 +71,7 @@
     <section class="normal">
         <p>Após quase 20 anos de sucesso e crescimento exponencial, a Telecall Wholesale é conhecida hoje como uma Global Carrier, com sólidas relações comerciais, capaz de se adaptar e lidar com os constantes desafios e mudanças do mundo dos negócios.</p>
     </section>
+</div>
 
 </body>
 <a href="./listar.php">lista</a>

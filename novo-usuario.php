@@ -32,7 +32,7 @@
             
             <h1>Cadastre-se</h1>
             <label for="nome">
-                Nome <input type="text" name="nome" placeholder="Digite seu nome">
+                Nome <input class="textfield" type="text" name="nome" placeholder="Digite seu nome">
             </label>
 
             <label for="email">

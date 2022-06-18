@@ -17,3 +17,4 @@ main{background-color: white; max-width: 600px; height: 850px; margin: auto;
 .cadastro{display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;
           padding-top: 30px;}
 label{display: flex; justify-content: center; align-items: center; flex-direction: column;}  
+.textfield{text-align: center; border-radius: 8px; border: solid 1px black;}
