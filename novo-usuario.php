@@ -36,53 +36,53 @@
             </label>
 
             <label for="email">
-                E-mail <input type="text" name="email" placeholder="Digite o E-mail">
+                E-mail <input class="textfield" type="text" name="email" placeholder="Digite o E-mail">
             </label>
 
             <label for="senha">
-                Senha <input type="password" name="senha" placeholder="Digite a senha">
+                Senha <input class="textfield" type="password" name="senha" placeholder="Digite a senha">
             </label>
 
             <label for="materno">
-                Nome materno <input type="text" name="materno" placeholder="Digite o nome da sua mãe">
+                Nome materno <input class="textfield" type="text" name="materno" placeholder="Digite o nome da sua mãe">
             </label>
 
             <label for="cpf">
-                CPF <input type="number" name="cpf" placeholder="Digite Cpf">
+                CPF <input class="textfield" type="number" name="cpf" placeholder="Digite Cpf">
             </label>
 
             <label for="celular">
-                Telefone celular <input type="number" name="celular" placeholder="Digite seu contato">
+                Telefone celular <input class="textfield" type="number" name="celular" placeholder="Digite seu contato">
             </label>
 
             <label for="fixo">
-                Telefone fixo <input type="number" name="fixo" placeholder="Telefone fixo">
+                Telefone fixo <input class="textfield" type="number" name="fixo" placeholder="Telefone fixo">
             </label>
 
             <label for="nascimento">
-                Data de Nascimento <input type="date" name="nascimento" placeholder="Data de nascimento">
+                Data de Nascimento <input class="textfield" type="date" name="nascimento" placeholder="Data de nascimento">
             </label>
             <br>
             <h2>Endereço</h2>
             
             <label for="cep">
-                CEP <input type="number" name="cep" placeholder="Digite o CEP">
+                CEP <input class="textfield" type="number" name="cep" placeholder="Digite o CEP">
             </label>
 
             <label for="estado">
-                Estado <input type="text" name="estado" placeholder="Estado">
+                Estado <input class="textfield" type="text" name="estado" placeholder="Estado">
             </label>
 
             <label for="cidade">
-                Cidade <input type="text" name="cidade" placeholder="Digite sua cidade">
+                Cidade <input class="textfield" type="text" name="cidade" placeholder="Digite sua cidade">
             </label>
 
             <label for="rua">
-                Rua <input type="text" name="rua" placeholder="Digite sua rua">
+                Rua <input class="textfield" type="text" name="rua" placeholder="Digite sua rua">
             </label>
 
             <label for="numero">
-                Número <input type="number" name="numero" placeholder="Número da residência">
+                Número <input class="textfield" type="number" name="numero" placeholder="Número da residência">
             </label>
             <br>
             <input type="submit" name="btn_cadastro" value="Cadastrar">
