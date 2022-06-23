@@ -56,10 +56,10 @@ li{margin-left: 20px; list-style: none; color: white;}
 
 
 /*            Tela de login             */
-    main{background-color: white; max-width: 1000px; height: 800px;
+    main{background-color: white; max-width: 1300px; height: 900px;
         margin: auto; margin-top: 50px; border-radius: 10px; flex-wrap: wrap;
         display: flex; justify-content: space-around; align-items: center;
-        padding: 10px 20px 10px 20px;
+        padding: 40px 20px 10px 40px; box-shadow: 1px 2px 4px rgb(30, 40, 69);
     } 
 
 /*        Tela da esquerda      */
@@ -71,13 +71,13 @@ li{margin-left: 20px; list-style: none; color: white;}
     /*       Tela da direita - Login      */
     .right-login{height: 400px; background-color: #121212; border-radius: 10px;
                 display: flex; align-items: center; justify-content: center;
-                padding: 10px 30px 10px 30px;
+                padding: 10px 30px 10px 30px; box-shadow: 4px 2px 5px black;
                 }
     .login{display: flex; justify-content: center; align-items: center; flex-direction: column;
             margin: 20px;}
     label{margin-bottom: 16px; display: flex; flex-direction: column; text-align: center;}
     ::placeholder{text-align: center;}
-    .text-field-left{color: white; text-shadow: 1px 1px 1px black;}
+    .text-field-left{color: #20628d; text-shadow: 1px 2px 4px rgb(118, 117, 117); font-size: 50px; font-weight: bolder;}
     .text-field-right{letter-spacing: 6px; color: white; margin-bottom: 28px; font-size: 40px; font-weight: bold;}
     p{color: white;}
 

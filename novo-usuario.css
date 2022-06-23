@@ -10,11 +10,60 @@
     font-family:var(--font-logo) ;
 }
 
-body{background-image: url(img/img-fundo.jpg);}
+body{background-image: url(img/img-fundo.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; }
 
-main{background-color: white; max-width: 600px; height: 850px; margin: auto;
-            border-radius: 10px; margin-top: 20px;}
+main{background-color: rgb(35, 51, 58); max-width: 600px; height: 1100px; margin: auto;
+            border-radius: 10px; margin-top: 20px; box-shadow: 1px 2px 4px;}
 .cadastro{display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;
-          padding-top: 30px;}
-label{display: flex; justify-content: center; align-items: center; flex-direction: column;}  
-.textfield{text-align: center; border-radius: 8px; border: solid 1px black;}
+          padding-top: 30px; color: #fff;}
+label{font-family: var(--font-logo); display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 22px; margin: 0px 0px 8px 0px;}  
+.textfield{box-shadow: 1px 2px 4px rgb(72, 78, 80) ; background-color: rgb(255, 255, 255); text-align: center; border-radius: 4px; border: solid 1px black; width: 200px;}
+
+.btn_cadastro {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+.btn_cadastro:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+ .btn_cadastro{
+      
+    border-radius: 20px;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .btn_cadastro:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+  
+ 

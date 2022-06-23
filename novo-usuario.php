@@ -84,8 +84,7 @@
             <label for="numero">
                 Número <input class="textfield" type="number" name="numero" placeholder="Número da residência">
             </label>
-            <br>
-            <input type="submit" name="btn_cadastro" value="Cadastrar">
+            <input class="btn_cadastro" type="button" name="btn_cadastro" value="Cadastrar">
         </form>
     </main>
     <a href="login.html">voltar</a>
