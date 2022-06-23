@@ -7,6 +7,26 @@
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
+<?php
+    include('config.php');
+
+    if(empty($_POST['cadastrados']) || empty($_POST['senha'])){
+        if(strlen($_POST['email']) == 0) {
+            echo "Preencha seu e-mail";
+        } else if(strlen($_POST['senha']) == 0) {
+            echo "Preencha sua senha";
+        } else {
+            $usuario = $conn->real_escape_string($_POST['usuario']);  
+            $senha = $conn->real_escape_string($_POST['senha']);      
+
+            $sql = "SELECT * FROM cadastrados email = '$usuario' AND senha = $senha";
+            $sql_query = $mysqli->query($sql) or die("Falha no código:" .$mysqli->error);
+        }
+    }
+    
+    $cadastrados = $_POST['cadastrados'];
+    $senha = $_POST['senha'];
+?>
 <body>
     <header>
             <div class="logo">
