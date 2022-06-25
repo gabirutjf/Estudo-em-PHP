@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Usuário</title>
+    <link rel="shortcut icon" href="./img/512x512bb.jpg" type="image/x-icon">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="novo-usuario.css">
 </head>
@@ -27,7 +28,7 @@
 </header>
     <main>
         <form class="cadastro" action="salvar-usuario.php" method="POST">
-            <input type="hidden" name="id" value="<?= $_GET['id']; ?>">
+            <input type="hidden" name="id" value="<?= $_GET['id']?>">
             <input type="hidden" name="acao" value="editar">
 
             

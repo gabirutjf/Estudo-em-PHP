@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="./img/512x512bb.jpg" type="image/x-icon">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="novo-usuario.css">
 </head>
@@ -84,7 +85,7 @@
             <label for="numero">
                 Número <input class="textfield" type="number" name="numero" placeholder="Número da residência">
             </label>
-            <input class="btn_cadastro" type="button" name="btn_cadastro" value="Cadastrar">
+            <input class="btn_cadastro" type="submit" name="btn_cadastro" value="Cadastrar">
         </form>
     </main>
     <a href="login.html">voltar</a>

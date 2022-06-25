@@ -4,29 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/512x512bb.jpg" type="image/x-icon">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
-<?php
-    include('config.php');
-
-    if(empty($_POST['cadastrados']) || empty($_POST['senha'])){
-        if(strlen($_POST['email']) == 0) {
-            echo "Preencha seu e-mail";
-        } else if(strlen($_POST['senha']) == 0) {
-            echo "Preencha sua senha";
-        } else {
-            $usuario = $conn->real_escape_string($_POST['usuario']);  
-            $senha = $conn->real_escape_string($_POST['senha']);      
-
-            $sql = "SELECT * FROM cadastrados email = '$usuario' AND senha = $senha";
-            $sql_query = $mysqli->query($sql) or die("Falha no código:" .$mysqli->error);
-        }
-    }
-    
-    $cadastrados = $_POST['cadastrados'];
-    $senha = $_POST['senha'];
-?>
 <body>
     <header>
             <div class="logo">
@@ -39,7 +20,7 @@
             <nav class="nav-bar">
                 <ul>
                     <li><a class="link" href="https://web.whatsapp.com/" target="_self" >Contato</a></li>
-                    <li><a class="link" href="listar.php" target="_self" rel="next">Sobre</a></li>
+                    <li><a class="link" href="https://www.telecall.com/" target="_target" rel="next">Sobre</a></li>
                     <li><a class="link" href="novo-usuario.php" target="_self" rel="next">Cadastre-se</a></li>
                 </ul>
             </nav>
@@ -71,3 +52,23 @@
     
 </body>
 </html>
+<?php
+    include('config.php');
+
+    if(empty($_POST['cadastrados']) || empty($_POST['senha'])){
+        if(strlen($_POST['email']) == 0) {
+            echo "Preencha seu e-mail";
+        } else if(strlen($_POST['senha']) == 0) {
+            echo "Preencha sua senha";
+        } else {
+            $usuario = $conn->real_escape_string($_POST['usuario']);  
+            $senha = $conn->real_escape_string($_POST['senha']);      
+
+            $sql = "SELECT * FROM cadastrados email = '$usuario' AND senha = $senha";
+            $sql_query = $mysqli->query($sql) or die("Falha no código:" .$mysqli->error);
+        }
+    }
+    
+    $cadastrados = $_POST['cadastrados'];
+    $senha = $_POST['senha'];
+?>

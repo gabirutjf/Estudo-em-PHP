@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="./img/512x512bb.jpg" type="image/x-icon">
 <?php
     require_once("config.php");
     switch ($_REQUEST["acao"]){
