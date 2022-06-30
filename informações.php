@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="info.css">
 </head>
 <body>
-    <main>
-        <h1>Informações</h1>
-        <img src="img/math.jpg" alt="">
-    </main>
+<?php 
+
+$num = 5; 
+do{ 
+
+$num++; 
+ 			echo " o número $num<br>"; 
+} 
+
+while ($num <= 15); 
+?> 
+
 </body>
 </html>

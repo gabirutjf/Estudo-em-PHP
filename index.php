@@ -22,7 +22,7 @@
 
         <nav class="nav-bar">
             <ul>
-                <li><a class="link" href="./img/math.jpg" target="_blank" >Sobre</a></li>
+                <li><a class="link" href="./informações.php" target="_blank" >Sobre</a></li>
                 <li><a class="link" href="login.php" target="_self" rel="next">Login</a></li>
                 <li><a class="link" href="novo-usuario.php">Cadastre-se</a></li>
             </ul>
